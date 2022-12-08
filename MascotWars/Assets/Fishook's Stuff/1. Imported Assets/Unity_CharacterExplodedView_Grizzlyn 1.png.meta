@@ -121,11 +121,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 356
-        y: 3258
-        width: 170
-        height: 146
+        y: 3042
+        width: 168
+        height: 362
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -141,12 +141,12 @@ TextureImporter:
       name: Unity_CharacterExplodedView_Grizzlyn 1_1
       rect:
         serializedVersion: 2
-        x: 743
-        y: 3309
-        width: 181
-        height: 100
+        x: 738
+        y: 3030
+        width: 185
+        height: 379
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -166,8 +166,8 @@ TextureImporter:
         y: 2817
         width: 760
         height: 707
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.69764274, y: 0.04526236}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -187,8 +187,8 @@ TextureImporter:
         y: 2979
         width: 373
         height: 494
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.04077541, y: 0.77739316}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -201,48 +201,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Unity_CharacterExplodedView_Grizzlyn 1_4
-      rect:
-        serializedVersion: 2
-        x: 365
-        y: 3045
-        width: 93
-        height: 29
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6a692d4f7ea1eab4fa0fc25f9263b830
-      internalID: 1280525627
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Unity_CharacterExplodedView_Grizzlyn 1_5
-      rect:
-        serializedVersion: 2
-        x: 739
-        y: 3033
-        width: 183
-        height: 91
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 30f3e9c1599dc4b47b263a38cf082827
-      internalID: 1090055013
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Unity_CharacterExplodedView_Grizzlyn 1_6
       rect:
         serializedVersion: 2
@@ -250,8 +208,8 @@ TextureImporter:
         y: 2567
         width: 352
         height: 355
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.8743238, y: 0.7523885}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -272,7 +230,7 @@ TextureImporter:
         width: 814
         height: 1218
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -292,8 +250,8 @@ TextureImporter:
         y: 2583
         width: 343
         height: 357
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.62176496, y: 0.92896056}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -313,8 +271,8 @@ TextureImporter:
         y: 2195
         width: 321
         height: 286
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.78733134, y: 0.07614968}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -334,8 +292,8 @@ TextureImporter:
         y: 1966
         width: 396
         height: 491
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.77949506, y: 0.9454681}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -355,8 +313,8 @@ TextureImporter:
         y: 2168
         width: 325
         height: 297
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.77129585, y: 0.06250493}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -376,8 +334,8 @@ TextureImporter:
         y: 1883
         width: 394
         height: 489
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.6766723, y: 0.96500653}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -397,8 +355,8 @@ TextureImporter:
         y: 744
         width: 573
         height: 849
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.78054017, y: 0.95938206}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -418,8 +376,8 @@ TextureImporter:
         y: 699
         width: 670
         height: 886
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.2714348, y: 0.97662795}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -439,8 +397,8 @@ TextureImporter:
         y: 203
         width: 415
         height: 974
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.45555007, y: 0.88148737}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -460,8 +418,8 @@ TextureImporter:
         y: 85
         width: 574
         height: 236
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.7065953, y: 0.9578171}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -481,8 +439,8 @@ TextureImporter:
         y: 103
         width: 576
         height: 235
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.29052988, y: 0.9541842}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -502,8 +460,8 @@ TextureImporter:
         y: 122
         width: 406
         height: 974
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.76289016, y: 0.9049782}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
