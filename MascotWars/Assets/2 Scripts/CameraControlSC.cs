@@ -6,7 +6,7 @@ public class CameraControlSC : MonoBehaviour
 {
 
     //Variables
-    public float cameraPanSpeed = -5f;
+    public float cameraPanSpeed = -1f;
     Vector2 startPos;
     public Transform ground;
 
@@ -24,8 +24,8 @@ public class CameraControlSC : MonoBehaviour
     {
         //Vector2 newPos = new Vector2(100, Time.deltaTime * cameraPanSpeed);
         //transform.position = new Vector2(15, Time.deltaTime * cameraPanSpeed);
-        //startPos + Vector2.down * newPos;
-        transform.position = Vector3.Lerp(transform.position, ground.position, Time.deltaTime);
+        //Time.deltaTime
+        transform.position = Vector2.Lerp(transform.position, ground.position);
     }
 }
 
