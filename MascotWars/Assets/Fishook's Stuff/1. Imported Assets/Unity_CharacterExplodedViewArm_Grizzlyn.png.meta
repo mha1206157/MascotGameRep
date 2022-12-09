@@ -117,7 +117,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Unity_CharacterExplodedViewArm_Grizzlyn_0
+      name: Back_Arm
       rect:
         serializedVersion: 2
         x: 556
@@ -125,7 +125,7 @@ TextureImporter:
         width: 670
         height: 603
       alignment: 9
-      pivot: {x: 0.8947863, y: 0.36213827}
+      pivot: {x: 0.8947863, y: 0.37517044}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -138,7 +138,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Unity_CharacterExplodedViewArm_Grizzlyn_1
+      name: Front_Arm
       rect:
         serializedVersion: 2
         x: 2130
@@ -169,8 +169,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Unity_CharacterExplodedViewArm_Grizzlyn_1: 8057596
-      Unity_CharacterExplodedViewArm_Grizzlyn_0: -1795968451
+      Back_Arm: -1795968451
+      Front_Arm: 8057596
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
