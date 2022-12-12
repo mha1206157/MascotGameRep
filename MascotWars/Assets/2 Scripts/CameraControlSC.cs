@@ -26,6 +26,8 @@ public class CameraControlSC : MonoBehaviour
         //transform.position = new Vector2(15, Time.deltaTime * cameraPanSpeed);
         //Time.deltaTime
         transform.position = Vector3.Lerp(transform.position, ground.position, Time.deltaTime);
+
+        
     }
 }
 
