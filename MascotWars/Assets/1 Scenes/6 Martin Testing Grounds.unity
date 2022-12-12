@@ -207,7 +207,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &7606140852370441947
+--- !u!1001 &699316389
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -216,7 +216,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 820741364003184511, guid: 339ced96fb1dd1545be02db713f9925c, type: 3}
       propertyPath: m_Name
-      value: Grizzlyn_Prefab
+      value: Grizzlyn_Prefab (1)
       objectReference: {fileID: 0}
     - target: {fileID: 6278436144775444751, guid: 339ced96fb1dd1545be02db713f9925c, type: 3}
       propertyPath: m_RootOrder
@@ -224,11 +224,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6278436144775444751, guid: 339ced96fb1dd1545be02db713f9925c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 7.49
+      value: 13.279587
       objectReference: {fileID: 0}
     - target: {fileID: 6278436144775444751, guid: 339ced96fb1dd1545be02db713f9925c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.17
+      value: 2.7911391
       objectReference: {fileID: 0}
     - target: {fileID: 6278436144775444751, guid: 339ced96fb1dd1545be02db713f9925c, type: 3}
       propertyPath: m_LocalPosition.z
