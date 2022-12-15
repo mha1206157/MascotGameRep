@@ -4,12 +4,16 @@ using UnityEngine;
 
 public class HawksonPlayerController : MonoBehaviour
 {
+    private Rigidbody2D rb;
+
     float dirX, moveSpeed;
+
     Animator anim;
 
     // Initialization
     void Start()
     {
+        rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         moveSpeed = 5f;
     }
@@ -17,26 +21,42 @@ public class HawksonPlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //walking
-        transform.position = new Vector2(transform.position.x + dirX, transform.position.y);
+        //If Hawkson is player 1
+        if (name == "Hawkson_Prefab" && Input.anyKey)
+        {
+            //walking forwards
+            if (Input.GetKey(KeyCode.L))
+            {
 
-        if (Input.GetKey(KeyCode.J))
-        {
-            
-            transform.Translate(Vector3.left);
-            anim.SetBool("isWalking", true);
+                dirX = moveSpeed;
+                anim.SetBool("isWalking", true);
+            }
+
+            //walking backwards
+            if (Input.GetKey(KeyCode.J))
+            {
+
+                dirX = - moveSpeed;
+                anim.SetBool("isWalking", true);
+            }
+          
+            //Punch
+            if (Input.GetKeyDown(KeyCode.T))
+            {
+
+                anim.SetTrigger("Punch");
+            }
+
         }
-        else
+        else if (name == "Hawkson_Prefab" && !Input.anyKey)
         {
-            transform.Translate(Vector3.zero);
+            dirX = 0f;
             anim.SetBool("isWalking", false);
         }
+    }
 
-        //Punch
-        if(Input.GetKeyDown(KeyCode.T))
-        {
-            
-            anim.SetTrigger("Punch");
-        }
+    private void FixedUpdate()
+    {
+        rb.velocity = new Vector2(dirX, 0f);
     }
 }
