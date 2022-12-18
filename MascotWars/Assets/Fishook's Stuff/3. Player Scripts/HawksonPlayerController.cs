@@ -4,10 +4,9 @@ using UnityEngine;
 
 public class HawksonPlayerController : MonoBehaviour
 {
+    //movement variables
     private Rigidbody2D rb;
-
     float dirX, moveSpeed;
-
     Animator anim;
 
     // Initialization
