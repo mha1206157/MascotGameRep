@@ -17,10 +17,14 @@ public class GrizzlynPlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //Allows character to move left and right
         dirX = Input.GetAxisRaw("Horizontal") * moveSpeed * Time.deltaTime;
 
         transform.position = new Vector2(transform.position.x + dirX, transform.position.y);
 
+        //Animation rules
+
+        //If character is moving and punch is not active, walk anim starts
         if (dirX != 0 && !anim.GetCurrentAnimatorStateInfo(0).IsName("Punch"))
         {
             anim.SetBool("isWalking", true);
@@ -29,9 +33,11 @@ public class GrizzlynPlayerController : MonoBehaviour
         {
             anim.SetBool("isWalking", false);
         }
+
+        //If button is pressed and punch is not active, punch anim starts
         if (Input.GetButtonDown("Fire1") && !anim.GetCurrentAnimatorStateInfo(0).IsName("Punch"))
         {
-            anim.SetBool("isWalking", false);
+            anim.SetBool("isWalking", true);
             anim.SetTrigger("Punch");
         }
     }
