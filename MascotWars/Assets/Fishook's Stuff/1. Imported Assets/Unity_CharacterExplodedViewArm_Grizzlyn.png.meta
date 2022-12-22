@@ -129,6 +129,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
+<<<<<<< HEAD
       name: 
       rect:
         serializedVersion: 2
@@ -138,13 +139,50 @@ TextureImporter:
         height: 0
       alignment: 0
       pivot: {x: 0, y: 0}
+=======
+      name: Unity_CharacterExplodedViewArm_Grizzlyn_0
+      rect:
+        serializedVersion: 2
+        x: 556
+        y: 2479
+        width: 670
+        height: 603
+      alignment: 9
+      pivot: {x: 0.8947863, y: 0.36213827}
+>>>>>>> parent of 1373ec5 (Merge branch 'Martin')
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
+<<<<<<< HEAD
       spriteID: 5e97eb03825dee720800000000000000
       internalID: 2877471580529523173
+=======
+      spriteID: 2eaff0a089b9269469f413a21c518b29
+      internalID: -1795968451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Unity_CharacterExplodedViewArm_Grizzlyn_1
+      rect:
+        serializedVersion: 2
+        x: 2130
+        y: 915
+        width: 546
+        height: 715
+      alignment: 9
+      pivot: {x: 0.8875558, y: 0.2780362}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db72917aab9569146b5ffc161c18b0a7
+      internalID: 8057596
+>>>>>>> parent of 1373ec5 (Merge branch 'Martin')
       vertices: []
       indices: 
       edges: []
@@ -160,7 +198,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+<<<<<<< HEAD
       : 2877471580529523173
+=======
+      Unity_CharacterExplodedViewArm_Grizzlyn_1: 8057596
+      Unity_CharacterExplodedViewArm_Grizzlyn_0: -1795968451
+>>>>>>> parent of 1373ec5 (Merge branch 'Martin')
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
