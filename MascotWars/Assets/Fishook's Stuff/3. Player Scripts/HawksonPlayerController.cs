@@ -21,7 +21,7 @@ public class HawksonPlayerController : MonoBehaviour
     void Update()
     {
         //If Hawkson is player 1
-        if (name == "Hawkson_Prefab" && Input.anyKey)
+        if (name == "Hawkson_PrefabP1" && Input.anyKey)
         {
             //walking forwards
             if (Input.GetKey(KeyCode.L))
@@ -47,7 +47,40 @@ public class HawksonPlayerController : MonoBehaviour
             }
 
         }
-        else if (name == "Hawkson_Prefab" && !Input.anyKey)
+        else if (name == "Hawkson_PrefabP1" && !Input.anyKey)
+        {
+            dirX = 0f;
+            anim.SetBool("isWalking", false);
+        }
+
+        //If Hawkson is player 2
+        if (name == "Hawkson_PrefabP2" && Input.anyKey)
+        {
+            //walking forwards
+            if (Input.GetKey(KeyCode.L))
+            {
+
+                dirX = moveSpeed;
+                anim.SetBool("isWalking", true);
+            }
+
+            //walking backwards
+            if (Input.GetKey(KeyCode.J))
+            {
+
+                dirX = -moveSpeed;
+                anim.SetBool("isWalking", true);
+            }
+
+            //Punch
+            if (Input.GetKeyDown(KeyCode.T))
+            {
+
+                anim.SetTrigger("Punch");
+            }
+
+        }
+        else if (name == "Hawkson_PrefabP2" && !Input.anyKey)
         {
             dirX = 0f;
             anim.SetBool("isWalking", false);
