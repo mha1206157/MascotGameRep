@@ -347,8 +347,9 @@ GameObject:
   - component: {fileID: 6278436144775444751}
   - component: {fileID: 8349151929136983283}
   - component: {fileID: 4458636410949895434}
-  - component: {fileID: 4477245483073370574}
+  - component: {fileID: 7361506834215387894}
   - component: {fileID: -3778538779285624444}
+  - component: {fileID: 4477245483073370574}
   m_Layer: 0
   m_Name: Grizzlyn_PrefabP2
   m_TagString: Untagged
@@ -422,6 +423,40 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1954170b8e12a43489ec0a11727382c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &7361506834215387894
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 820741364003184511}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa75493bc2d1ddc49b53bc71bf77b123, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 0
+--- !u!50 &-3778538779285624444
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 820741364003184511}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!61 &4477245483073370574
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -448,27 +483,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 15.206093, y: 33.708817}
   m_EdgeRadius: 0
---- !u!50 &-3778538779285624444
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 820741364003184511}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!1 &1644880044954385890
 GameObject:
   m_ObjectHideFlags: 0

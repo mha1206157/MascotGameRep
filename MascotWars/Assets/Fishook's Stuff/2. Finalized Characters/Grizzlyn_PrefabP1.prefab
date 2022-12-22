@@ -515,8 +515,8 @@ GameObject:
   - component: {fileID: 8659749614921762000}
   - component: {fileID: 6688625539887321388}
   - component: {fileID: 1363643171709810901}
-  - component: {fileID: 1238136987003880465}
   - component: {fileID: 7242649066638185563}
+  - component: {fileID: 1238136987003880465}
   m_Layer: 0
   m_Name: Grizzlyn_PrefabP1
   m_TagString: Untagged
@@ -590,6 +590,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1954170b8e12a43489ec0a11727382c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!50 &7242649066638185563
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2625382941283181216}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!61 &1238136987003880465
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -616,27 +637,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 15.206093, y: 33.708817}
   m_EdgeRadius: 0
---- !u!50 &7242649066638185563
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2625382941283181216}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!1 &2730172887920299439
 GameObject:
   m_ObjectHideFlags: 0
