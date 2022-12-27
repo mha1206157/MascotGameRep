@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
 using UnityEngine;
 
 public class HawksonPlayerController : MonoBehaviour
@@ -9,12 +10,16 @@ public class HawksonPlayerController : MonoBehaviour
     float dirX, moveSpeed;
     Animator anim;
 
+    //HealthBar script
+    public HealthBar healthScript;
+
     // Initialization
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         moveSpeed = 5f;
+
     }
 
     // Update is called once per frame
@@ -45,13 +50,19 @@ public class HawksonPlayerController : MonoBehaviour
 
                 anim.SetTrigger("Punch");
             }
-
         }
         else if (name == "Hawkson_PrefabP1" && !Input.anyKey)
         {
             dirX = 0f;
             anim.SetBool("isWalking", false);
         }
+        //once health depletes
+        if (HealthBar.health <= 0f)
+        {
+            UnityEngine.Debug.Log("KOd");
+        }
+       
+        ///////////////////////////////////////////////////////////////////////////////////////////////
 
         //If Hawkson is player 2
         if (name == "Hawkson_PrefabP2" && Input.anyKey)
