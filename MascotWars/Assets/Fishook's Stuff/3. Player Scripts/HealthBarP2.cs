@@ -4,17 +4,17 @@ using System.Reflection;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class HealthBar : MonoBehaviour
+public class HealthBarP2 : MonoBehaviour
 {
     //variables
-    Image healthBar;
+    Image healthBarP2;
     public float maxHealth = 100f;
     public static float health;
 
     // Start is called before the first frame update
     void Start()
     {
-        healthBar = GetComponent<Image> ();
+        healthBarP2 = GetComponent<Image>();
         health = maxHealth;
     }
 
@@ -22,6 +22,6 @@ public class HealthBar : MonoBehaviour
     void Update()
     {
         //HealthBar fill depends on health divided by total health
-        healthBar.fillAmount = health / maxHealth;
+        healthBarP2.fillAmount = health / maxHealth;
     }
 }

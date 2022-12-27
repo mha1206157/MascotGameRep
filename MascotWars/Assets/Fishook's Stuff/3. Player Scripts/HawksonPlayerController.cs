@@ -11,7 +11,7 @@ public class HawksonPlayerController : MonoBehaviour
     Animator anim;
 
     //HealthBar script
-    public HealthBar healthScript;
+    public HealthBarP1 healthScript;
 
     // Initialization
     void Start()
@@ -29,7 +29,7 @@ public class HawksonPlayerController : MonoBehaviour
         if (name == "Hawkson_PrefabP1" && Input.anyKey)
         {
             //walking forwards
-            if (Input.GetKey(KeyCode.L))
+            if (Input.GetKey(KeyCode.D))
             {
 
                 dirX = moveSpeed;
@@ -37,7 +37,7 @@ public class HawksonPlayerController : MonoBehaviour
             }
 
             //walking backwards
-            if (Input.GetKey(KeyCode.J))
+            if (Input.GetKey(KeyCode.A))
             {
 
                 dirX = - moveSpeed;
@@ -45,7 +45,7 @@ public class HawksonPlayerController : MonoBehaviour
             }
           
             //Punch
-            if (Input.GetKeyDown(KeyCode.T))
+            if (Input.GetKeyDown(KeyCode.Space))
             {
 
                 anim.SetTrigger("Punch");
@@ -57,7 +57,7 @@ public class HawksonPlayerController : MonoBehaviour
             anim.SetBool("isWalking", false);
         }
         //once health depletes
-        if (HealthBar.health <= 0f)
+        if (HealthBarP1.health <= 0f)
         {
             UnityEngine.Debug.Log("KOd");
         }
