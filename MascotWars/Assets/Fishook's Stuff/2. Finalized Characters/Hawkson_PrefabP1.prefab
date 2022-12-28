@@ -262,6 +262,7 @@ GameObject:
   m_Component:
   - component: {fileID: 38762024243872864}
   - component: {fileID: 928279246562507889}
+  - component: {fileID: 8351917686916943441}
   m_Layer: 0
   m_Name: Front_Hand
   m_TagString: Untagged
@@ -336,6 +337,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!58 &8351917686916943441
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1707533008851465128}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.7858475, y: 1.4145372}
+  serializedVersion: 2
+  m_Radius: 1.5200002
 --- !u!1 &2420274591679815645
 GameObject:
   m_ObjectHideFlags: 0
@@ -934,6 +951,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7948032146000219650}
   - component: {fileID: 7821839334812909324}
+  - component: {fileID: 2388284949910419961}
   m_Layer: 0
   m_Name: Back_Hand
   m_TagString: Untagged
@@ -1008,6 +1026,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!58 &2388284949910419961
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5106900441090631006}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.8644405, y: 1.335954}
+  serializedVersion: 2
+  m_Radius: 1.5050001
 --- !u!1 &6493874190490337211
 GameObject:
   m_ObjectHideFlags: 0
@@ -1187,6 +1221,7 @@ GameObject:
   - component: {fileID: 4020630083345398927}
   - component: {fileID: 6279459396056891320}
   - component: {fileID: 200242512385934893}
+  - component: {fileID: 1484206866292885985}
   - component: {fileID: 729048367183852422}
   - component: {fileID: 1141078436700421668}
   m_Layer: 0
@@ -1260,6 +1295,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5106fc26533a133489e08cf74aff4610, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthScript: {fileID: 0}
+--- !u!114 &1484206866292885985
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7188967603847976097}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19b9cb0f27df6e944bbbe7bdea086d86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!50 &729048367183852422
