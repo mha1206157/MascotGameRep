@@ -59,7 +59,7 @@ public class HawksonPlayerController : MonoBehaviour
         //once health depletes
         if (HealthBarP1.health <= 0f)
         {
-            UnityEngine.Debug.Log("KOd");
+            UnityEngine.Debug.Log("Hawkson is KOd");
         }
        
         ///////////////////////////////////////////////////////////////////////////////////////////////

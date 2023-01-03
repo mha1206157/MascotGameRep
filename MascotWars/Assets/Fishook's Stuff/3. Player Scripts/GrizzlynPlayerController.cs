@@ -4,41 +4,106 @@ using UnityEngine;
 
 public class GrizzlynPlayerController : MonoBehaviour
 {
+    //movement variables
+    private Rigidbody2D rb;
     float dirX, moveSpeed;
     Animator anim;
+
+    //HealthBar script
+    public HealthBarP1 healthScript;
 
     // Initialization
     void Start()
     {
+        rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         moveSpeed = 5f;
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        //Allows character to move left and right
-        dirX = Input.GetAxisRaw("Horizontal") * moveSpeed * Time.deltaTime;
-
-        transform.position = new Vector2(transform.position.x + dirX, transform.position.y);
-
-        //Animation rules
-
-        //If character is moving and punch is not active, walk anim starts
-        if (dirX != 0 && !anim.GetCurrentAnimatorStateInfo(0).IsName("Punch"))
+        //If Grizzlyn is player 1
+        if (name == "Grizzlyn_PrefabP1" && Input.anyKey)
         {
-            anim.SetBool("isWalking", true);
+            //walking forwards
+            if (Input.GetKey(KeyCode.D))
+            {
+
+                dirX = moveSpeed;
+                anim.SetBool("isWalking", true);
+            }
+
+            //walking backwards
+            if (Input.GetKey(KeyCode.A))
+            {
+
+                dirX = -moveSpeed;
+                anim.SetBool("isWalking", true);
+            }
+
+            //Punch
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+
+                anim.SetTrigger("Punch");
+            }
         }
-        else
+        else if (name == "Grizzlyn_PrefabP1" && !Input.anyKey)
         {
+            dirX = 0f;
             anim.SetBool("isWalking", false);
         }
-
-        //If button is pressed and punch is not active, punch anim starts
-        if (Input.GetButtonDown("Fire1") && !anim.GetCurrentAnimatorStateInfo(0).IsName("Punch"))
+        //once health depletes
+        if (HealthBarP1.health <= 0f)
         {
-            anim.SetBool("isWalking", true);
-            anim.SetTrigger("Punch");
+            UnityEngine.Debug.Log("Grizzlyn is KOd");
         }
+
+        ///////////////////////////////////////////////////////////////////////////////////////////////
+
+        //If Grizzlyn is player 2
+        if (name == "Grizzlyn_PrefabP2" && Input.anyKey)
+        {
+            //walking forwards
+            if (Input.GetKey(KeyCode.L))
+            {
+
+                dirX = moveSpeed;
+                anim.SetBool("isWalking", true);
+            }
+
+            //walking backwards
+            if (Input.GetKey(KeyCode.J))
+            {
+
+                dirX = -moveSpeed;
+                anim.SetBool("isWalking", true);
+            }
+
+            //Punch
+            if (Input.GetKeyDown(KeyCode.T))
+            {
+
+                anim.SetTrigger("Punch");
+            }
+
+        }
+        else if (name == "Grizzlyn_PrefabP2" && !Input.anyKey)
+        {
+            dirX = 0f;
+            anim.SetBool("isWalking", false);
+        }
+        //once health depletes
+        if (HealthBarP1.health <= 0f)
+        {
+            UnityEngine.Debug.Log("Grizzlyn is KOd");
+        }
+    }
+
+    private void FixedUpdate()
+    {
+        rb.velocity = new Vector2(dirX, 0f);
     }
 }
