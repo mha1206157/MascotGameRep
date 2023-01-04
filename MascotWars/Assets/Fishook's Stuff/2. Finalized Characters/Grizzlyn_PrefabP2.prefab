@@ -1333,6 +1333,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5993518200691484711}
   - component: {fileID: 5993518200691484708}
+  - component: {fileID: 1332688174381219509}
   - component: {fileID: 4271493464943124373}
   m_Layer: 0
   m_Name: Front_Hand
@@ -1408,6 +1409,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1332688174381219509
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5993518200691484710}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a81bd2664617b3746a1ff85b99bdbe18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!58 &4271493464943124373
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1434,6 +1447,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5993518200707248775}
   - component: {fileID: 5993518200707248772}
+  - component: {fileID: 2693407052388021786}
   - component: {fileID: 2883685416279005123}
   m_Layer: 0
   m_Name: Back_Hand
@@ -1509,6 +1523,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2693407052388021786
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5993518200707248774}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a81bd2664617b3746a1ff85b99bdbe18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!58 &2883685416279005123
 CircleCollider2D:
   m_ObjectHideFlags: 0

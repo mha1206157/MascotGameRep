@@ -263,7 +263,6 @@ GameObject:
   - component: {fileID: 458890485450580864}
   - component: {fileID: 458890485450580871}
   - component: {fileID: 458890485450580870}
-  - component: {fileID: 4887428175100324870}
   - component: {fileID: 458890485450580868}
   - component: {fileID: 458890485450580603}
   m_Layer: 0
@@ -340,18 +339,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthScript: {fileID: 0}
---- !u!114 &4887428175100324870
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 458890485450580602}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 19b9cb0f27df6e944bbbe7bdea086d86, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!50 &458890485450580868
 Rigidbody2D:
   serializedVersion: 4
@@ -493,6 +480,7 @@ GameObject:
   m_Component:
   - component: {fileID: 458890485785406338}
   - component: {fileID: 458890485785406348}
+  - component: {fileID: 4561099907441508535}
   - component: {fileID: 2381291694553424334}
   m_Layer: 0
   m_Name: Front_Hand
@@ -568,6 +556,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &4561099907441508535
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 458890485785406337}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2055104242bc6d54490043e262ec6725, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!58 &2381291694553424334
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -678,6 +678,7 @@ GameObject:
   m_Component:
   - component: {fileID: 458890485929533015}
   - component: {fileID: 458890485929533009}
+  - component: {fileID: 3368834421204559290}
   - component: {fileID: 5020460393948961935}
   m_Layer: 0
   m_Name: Back_Hand
@@ -753,6 +754,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &3368834421204559290
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 458890485929533014}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2055104242bc6d54490043e262ec6725, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!58 &5020460393948961935
 CircleCollider2D:
   m_ObjectHideFlags: 0
