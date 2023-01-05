@@ -10,7 +10,7 @@ public class GrizzlynPlayerController : MonoBehaviour
     Animator anim;
 
     //HealthBar script
-    public HealthBarP1 healthScript;
+    public HealthBarP2 healthScript;
 
     // Initialization
     void Start()
