@@ -66,7 +66,7 @@ public class GrizzlynPlayerController : MonoBehaviour
         //If Grizzlyn is player 2
         if (name == "Grizzlyn_PrefabP2" && Input.anyKey)
         {
-            //walking forwards
+            //walking 
             if (Input.GetKey(KeyCode.L))
             {
 
@@ -75,7 +75,7 @@ public class GrizzlynPlayerController : MonoBehaviour
             }
 
             //walking backwards
-            if (Input.GetKey(KeyCode.J))
+            if (Input.GetKey(KeyCode.L))
             {
 
                 dirX = -moveSpeed;
@@ -83,7 +83,7 @@ public class GrizzlynPlayerController : MonoBehaviour
             }
 
             //Punch
-            if (Input.GetKeyDown(KeyCode.T))
+            if (Input.GetKeyDown(KeyCode.J))
             {
 
                 anim.SetTrigger("Punch");

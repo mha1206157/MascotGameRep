@@ -10,7 +10,7 @@ public class HawksonHitBox : MonoBehaviour
         if (col.gameObject.name == "Hawkson_PrefabP1" || col.gameObject.name == "Grizzlyn_PrefabP1")
         {
             //if P1 touches bacteria, then it takes 10 from health bar
-            HealthBarP2.health -= 10f;
+            HealthBarP1.health -= 10f;
 
             //message to detect P1 collision
             UnityEngine.Debug.Log("-10 to P1");
