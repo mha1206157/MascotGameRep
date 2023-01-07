@@ -1,6 +1,11 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.InputSystem;
+using UnityEngine.InputSystem.Utilities;
 using UnityEngine;
+using System.Diagnostics;
+using System.Security.Cryptography.X509Certificates;
 
 public class GrizzlynPlayerController : MonoBehaviour
 {
@@ -56,18 +61,18 @@ public class GrizzlynPlayerController : MonoBehaviour
             anim.SetBool("isWalking", false);
         }
         //once health depletes
-        if (HealthBarP1.health <= 0f)
+        if (name == "Grizzlyn_PrefabP1" && HealthBarP1.health <= 0f)
         {
             UnityEngine.Debug.Log("Grizzlyn is KOd");
         }
 
         ///////////////////////////////////////////////////////////////////////////////////////////////
 
-        //If Grizzlyn is player 2
+        //If player 2
         if (name == "Grizzlyn_PrefabP2" && Input.anyKey)
         {
-            //walking 
-            if (Input.GetKey(KeyCode.L))
+            //walking forwards
+            if (Input.GetKey(KeyCode.JoystickButton5))
             {
 
                 dirX = moveSpeed;
@@ -75,7 +80,7 @@ public class GrizzlynPlayerController : MonoBehaviour
             }
 
             //walking backwards
-            if (Input.GetKey(KeyCode.L))
+            if (Input.GetKey(KeyCode.JoystickButton4))
             {
 
                 dirX = -moveSpeed;
@@ -83,7 +88,7 @@ public class GrizzlynPlayerController : MonoBehaviour
             }
 
             //Punch
-            if (Input.GetKeyDown(KeyCode.J))
+            if (Input.GetKeyDown(KeyCode.JoystickButton0))
             {
 
                 anim.SetTrigger("Punch");
@@ -96,14 +101,16 @@ public class GrizzlynPlayerController : MonoBehaviour
             anim.SetBool("isWalking", false);
         }
         //once health depletes
-        if (HealthBarP1.health <= 0f)
+        if (name == "Grizzlyn_PrefabP2" && HealthBarP2.health <= 0f)
         {
             UnityEngine.Debug.Log("Grizzlyn is KOd");
         }
     }
 
+
     private void FixedUpdate()
     {
-        rb.velocity = new Vector2(dirX, 0f);
+            rb.velocity = new Vector2(dirX, 0f);
     }
+
 }

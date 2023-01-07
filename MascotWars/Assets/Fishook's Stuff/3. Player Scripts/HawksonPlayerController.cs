@@ -10,6 +10,8 @@ public class HawksonPlayerController : MonoBehaviour
     float dirX, moveSpeed;
     Animator anim;
 
+    public GameObject Hawkson_PrefabP1;
+
     //HealthBar script
     public HealthBarP1 healthScript;
 
@@ -47,9 +49,9 @@ public class HawksonPlayerController : MonoBehaviour
             //Punch
             if (Input.GetKeyDown(KeyCode.Space))
             {
-
                 anim.SetTrigger("Punch");
             }
+
         }
         else if (name == "Hawkson_PrefabP1" && !Input.anyKey)
         {
@@ -57,8 +59,12 @@ public class HawksonPlayerController : MonoBehaviour
             anim.SetBool("isWalking", false);
         }
         //once health depletes
-        if (HealthBarP1.health <= 0f)
+        if (name == "Hawkson_PrefabP1" && HealthBarP1.health <= 0f)
         {
+            dirX = 0f;
+
+            anim.SetBool("Hurt", true);
+
             UnityEngine.Debug.Log("Hawkson is KOd");
         }
        
@@ -68,7 +74,7 @@ public class HawksonPlayerController : MonoBehaviour
         if (name == "Hawkson_PrefabP2" && Input.anyKey)
         {
             //walking forwards
-            if (Input.GetKey(KeyCode.L))
+            if (Input.GetKey(KeyCode.JoystickButton5))
             {
 
                 dirX = moveSpeed;
@@ -76,7 +82,7 @@ public class HawksonPlayerController : MonoBehaviour
             }
 
             //walking backwards
-            if (Input.GetKey(KeyCode.J))
+            if (Input.GetKey(KeyCode.JoystickButton4))
             {
 
                 dirX = -moveSpeed;
@@ -84,17 +90,21 @@ public class HawksonPlayerController : MonoBehaviour
             }
 
             //Punch
-            if (Input.GetKeyDown(KeyCode.T))
+            if (Input.GetKeyDown(KeyCode.JoystickButton0))
             {
 
                 anim.SetTrigger("Punch");
             }
-
         }
         else if (name == "Hawkson_PrefabP2" && !Input.anyKey)
         {
             dirX = 0f;
             anim.SetBool("isWalking", false);
+        }
+        //once health depletes
+        if (name == "Hawkson_PrefabP2" && HealthBarP2.health <= 0f)
+        {
+            UnityEngine.Debug.Log("Hawkson is KOd");
         }
     }
 
