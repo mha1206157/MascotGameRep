@@ -1,11 +1,7 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine.InputSystem;
-using UnityEngine.InputSystem.Utilities;
-using UnityEngine;
 using System.Diagnostics;
-using System.Security.Cryptography.X509Certificates;
+using UnityEngine;
 
 public class GrizzlynPlayerController : MonoBehaviour
 {
@@ -23,7 +19,6 @@ public class GrizzlynPlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         moveSpeed = 5f;
-
     }
 
     // Update is called once per frame
@@ -35,7 +30,6 @@ public class GrizzlynPlayerController : MonoBehaviour
             //walking forwards
             if (Input.GetKey(KeyCode.D))
             {
-
                 dirX = moveSpeed;
                 anim.SetBool("isWalking", true);
             }
@@ -43,7 +37,6 @@ public class GrizzlynPlayerController : MonoBehaviour
             //walking backwards
             if (Input.GetKey(KeyCode.A))
             {
-
                 dirX = -moveSpeed;
                 anim.SetBool("isWalking", true);
             }
@@ -51,7 +44,6 @@ public class GrizzlynPlayerController : MonoBehaviour
             //Punch
             if (Input.GetKeyDown(KeyCode.Space))
             {
-
                 anim.SetTrigger("Punch");
             }
         }
@@ -60,10 +52,12 @@ public class GrizzlynPlayerController : MonoBehaviour
             dirX = 0f;
             anim.SetBool("isWalking", false);
         }
+
         //once health depletes
         if (name == "Grizzlyn_PrefabP1" && HealthBarP1.health <= 0f)
         {
-            UnityEngine.Debug.Log("Grizzlyn is KOd");
+            dirX = 0f;
+            UnityEngine.Debug.Log("Grizzlyn is KOd1");
         }
 
         ///////////////////////////////////////////////////////////////////////////////////////////////
@@ -74,7 +68,6 @@ public class GrizzlynPlayerController : MonoBehaviour
             //walking forwards
             if (Input.GetKey(KeyCode.JoystickButton5))
             {
-
                 dirX = moveSpeed;
                 anim.SetBool("isWalking", true);
             }
@@ -82,7 +75,6 @@ public class GrizzlynPlayerController : MonoBehaviour
             //walking backwards
             if (Input.GetKey(KeyCode.JoystickButton4))
             {
-
                 dirX = -moveSpeed;
                 anim.SetBool("isWalking", true);
             }
@@ -90,7 +82,6 @@ public class GrizzlynPlayerController : MonoBehaviour
             //Punch
             if (Input.GetKeyDown(KeyCode.JoystickButton0))
             {
-
                 anim.SetTrigger("Punch");
             }
 
@@ -100,17 +91,27 @@ public class GrizzlynPlayerController : MonoBehaviour
             dirX = 0f;
             anim.SetBool("isWalking", false);
         }
+
         //once health depletes
         if (name == "Grizzlyn_PrefabP2" && HealthBarP2.health <= 0f)
         {
-            UnityEngine.Debug.Log("Grizzlyn is KOd");
+            dirX = 0f;
+            UnityEngine.Debug.Log("Grizzlyn is KOd2");
         }
     }
 
+    //collions for Grizzlyn P1 and P2
+    void OnTriggerEnter2D(Collider2D col)
+    {
+        //if collision occurs
+        if (col.gameObject.name == "Front_Hand" || col.gameObject.name == "Back_Hand")
+        {
+            anim.SetTrigger("Hurt");
+        }
+    }
 
     private void FixedUpdate()
     {
-            rb.velocity = new Vector2(dirX, 0f);
+        rb.velocity = new Vector2(dirX, 0f);
     }
-
 }

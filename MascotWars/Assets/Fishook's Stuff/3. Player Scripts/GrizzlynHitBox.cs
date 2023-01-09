@@ -4,16 +4,24 @@ using UnityEngine;
 
 public class GrizzlynHitBox : MonoBehaviour
 {
-
     void OnTriggerEnter2D(Collider2D col)
     {
-        if (col.gameObject.name == "Hawkson_PrefabP2" || col.gameObject.name == "Grizzlyn_PrefabP2")
+        //if Hawkson collides with Grizzlyn
+        if(col.gameObject.name == "Grizzlyn_PrefabP1") 
         {
-            //if P1 collides with P2, -10 to healthbar
+            //-10 to Grizzlyn health bar
+            HealthBarP1.health -= 10f;
+
+            //message to detect collision
+            UnityEngine.Debug.Log("-10 to Grizzlyn");
+        }
+        if(col.gameObject.name == "Grizzlyn_PrefabP2")
+        {
+            //-10 to Grizzlyn health bar
             HealthBarP2.health -= 10f;
 
             //message to detect collision
-            UnityEngine.Debug.Log("-10 to P2");
+            UnityEngine.Debug.Log("-10 to Grizzlyn");
         }
     }
 }

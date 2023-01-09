@@ -21,7 +21,6 @@ public class HawksonPlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         moveSpeed = 5f;
-
     }
 
     // Update is called once per frame
@@ -33,7 +32,6 @@ public class HawksonPlayerController : MonoBehaviour
             //walking forwards
             if (Input.GetKey(KeyCode.D))
             {
-
                 dirX = moveSpeed;
                 anim.SetBool("isWalking", true);
             }
@@ -41,7 +39,6 @@ public class HawksonPlayerController : MonoBehaviour
             //walking backwards
             if (Input.GetKey(KeyCode.A))
             {
-
                 dirX = - moveSpeed;
                 anim.SetBool("isWalking", true);
             }
@@ -51,21 +48,18 @@ public class HawksonPlayerController : MonoBehaviour
             {
                 anim.SetTrigger("Punch");
             }
-
         }
         else if (name == "Hawkson_PrefabP1" && !Input.anyKey)
         {
             dirX = 0f;
             anim.SetBool("isWalking", false);
         }
+
         //once health depletes
         if (name == "Hawkson_PrefabP1" && HealthBarP1.health <= 0f)
         {
             dirX = 0f;
-
-            anim.SetBool("Hurt", true);
-
-            UnityEngine.Debug.Log("Hawkson is KOd");
+            UnityEngine.Debug.Log("Hawkson is KOd1");
         }
        
         ///////////////////////////////////////////////////////////////////////////////////////////////
@@ -76,7 +70,6 @@ public class HawksonPlayerController : MonoBehaviour
             //walking forwards
             if (Input.GetKey(KeyCode.JoystickButton5))
             {
-
                 dirX = moveSpeed;
                 anim.SetBool("isWalking", true);
             }
@@ -84,7 +77,6 @@ public class HawksonPlayerController : MonoBehaviour
             //walking backwards
             if (Input.GetKey(KeyCode.JoystickButton4))
             {
-
                 dirX = -moveSpeed;
                 anim.SetBool("isWalking", true);
             }
@@ -92,7 +84,6 @@ public class HawksonPlayerController : MonoBehaviour
             //Punch
             if (Input.GetKeyDown(KeyCode.JoystickButton0))
             {
-
                 anim.SetTrigger("Punch");
             }
         }
@@ -104,7 +95,18 @@ public class HawksonPlayerController : MonoBehaviour
         //once health depletes
         if (name == "Hawkson_PrefabP2" && HealthBarP2.health <= 0f)
         {
-            UnityEngine.Debug.Log("Hawkson is KOd");
+            dirX = 0f;
+            UnityEngine.Debug.Log("Hawkson is KOd2");
+        }
+    }
+
+    //collions for Hawkson P1 and P2
+    void OnTriggerEnter2D(Collider2D col)
+    {
+        //if collision occurs
+        if (col.gameObject.name == "Front_Hand" || col.gameObject.name == "Back_Hand")
+        {
+            anim.SetTrigger("Hurt");
         }
     }
 
