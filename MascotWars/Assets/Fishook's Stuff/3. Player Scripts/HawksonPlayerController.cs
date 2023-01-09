@@ -10,7 +10,9 @@ public class HawksonPlayerController : MonoBehaviour
     float dirX, moveSpeed;
     Animator anim;
 
+
     public GameObject Hawkson_PrefabP1;
+    public GameObject Hawkson_PrefabP2;
 
     //HealthBar script
     public HealthBarP1 healthScript;
