@@ -10,6 +10,9 @@ public class GrizzlynPlayerController : MonoBehaviour
     float dirX, moveSpeed;
     Animator anim;
 
+    public GameObject Grizzlyn_PrefabP1;
+    public GameObject Grizzlyn_PrefabP2;
+
     //HealthBar script
     public HealthBarP2 healthScript;
 
@@ -56,6 +59,7 @@ public class GrizzlynPlayerController : MonoBehaviour
         //once health depletes
         if (name == "Grizzlyn_PrefabP1" && HealthBarP1.health <= 0f)
         {
+            Destroy(Grizzlyn_PrefabP1);
             dirX = 0f;
             UnityEngine.Debug.Log("Grizzlyn is KOd1");
         }
@@ -95,6 +99,7 @@ public class GrizzlynPlayerController : MonoBehaviour
         //once health depletes
         if (name == "Grizzlyn_PrefabP2" && HealthBarP2.health <= 0f)
         {
+            Destroy(Grizzlyn_PrefabP2);
             dirX = 0f;
             UnityEngine.Debug.Log("Grizzlyn is KOd2");
         }

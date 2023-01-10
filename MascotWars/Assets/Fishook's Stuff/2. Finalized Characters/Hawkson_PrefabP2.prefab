@@ -872,7 +872,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5106fc26533a133489e08cf74aff4610, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Hawkson_PrefabP1: {fileID: 0}
+  Hawkson_PrefabP1: {fileID: 7049207657290722345, guid: 7ad1e1ef9b7963e4288f695b2d60b195, type: 3}
+  Hawkson_PrefabP2: {fileID: 3243735716357949273}
   healthScript: {fileID: 0}
 --- !u!50 &3243735716357949275
 Rigidbody2D:

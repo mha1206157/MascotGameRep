@@ -415,6 +415,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Hawkson_PrefabP2
       objectReference: {fileID: 0}
+    - target: {fileID: 3243735716357949277, guid: dbd00d67ba3991044a690100e07094c6, type: 3}
+      propertyPath: Hawkson_PrefabP2
+      value: 
+      objectReference: {fileID: 754864417}
     - target: {fileID: 3243735716357949279, guid: dbd00d67ba3991044a690100e07094c6, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -647,6 +651,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &754864417 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3243735716357949273, guid: dbd00d67ba3991044a690100e07094c6, type: 3}
+  m_PrefabInstance: {fileID: 524412775}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &912611688
 GameObject:
   m_ObjectHideFlags: 0

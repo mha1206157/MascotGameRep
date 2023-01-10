@@ -1292,6 +1292,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87f20b9932ba7dc4d9279639d4e07012, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Grizzlyn_PrefabP1: {fileID: 5691140611493744657, guid: abe0865387e499041b85460f87295dd3, type: 3}
+  Grizzlyn_PrefabP2: {fileID: 2331971053680555531}
   healthScript: {fileID: 0}
 --- !u!50 &2331971053680555533
 Rigidbody2D:

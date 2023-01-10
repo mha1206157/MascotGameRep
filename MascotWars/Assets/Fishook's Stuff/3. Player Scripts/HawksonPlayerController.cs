@@ -10,7 +10,6 @@ public class HawksonPlayerController : MonoBehaviour
     float dirX, moveSpeed;
     Animator anim;
 
-
     public GameObject Hawkson_PrefabP1;
     public GameObject Hawkson_PrefabP2;
 
@@ -53,6 +52,7 @@ public class HawksonPlayerController : MonoBehaviour
         }
         else if (name == "Hawkson_PrefabP1" && !Input.anyKey)
         {
+            Destroy(Hawkson_PrefabP1);
             dirX = 0f;
             anim.SetBool("isWalking", false);
         }
@@ -97,6 +97,7 @@ public class HawksonPlayerController : MonoBehaviour
         //once health depletes
         if (name == "Hawkson_PrefabP2" && HealthBarP2.health <= 0f)
         {
+            Destroy(Hawkson_PrefabP2);
             dirX = 0f;
             UnityEngine.Debug.Log("Hawkson is KOd2");
         }
