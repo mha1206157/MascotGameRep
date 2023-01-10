@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Hawkson_Hit
+  m_Name: Hawkson_Hurt
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -931,7 +931,16 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: -1
+        value: 50
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 103
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 0.033333335
+        value: 53
         inSlope: Infinity
         outSlope: Infinity
         tangentMode: 103
@@ -940,7 +949,16 @@ AnimationClip:
         outWeight: 0
       - serializedVersion: 3
         time: 0.083333336
-        value: 1
+        value: 53
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 103
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 0.25
+        value: 53
         inSlope: Infinity
         outSlope: Infinity
         tangentMode: 103
@@ -949,7 +967,7 @@ AnimationClip:
         outWeight: 0
       - serializedVersion: 3
         time: 0.5
-        value: -1
+        value: 53
         inSlope: Infinity
         outSlope: Infinity
         tangentMode: 103
@@ -968,7 +986,16 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 1
+        value: 53
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 103
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 0.033333335
+        value: 50
         inSlope: Infinity
         outSlope: Infinity
         tangentMode: 103
@@ -986,7 +1013,7 @@ AnimationClip:
         outWeight: 0
       - serializedVersion: 3
         time: 0.5
-        value: 1
+        value: 51
         inSlope: Infinity
         outSlope: Infinity
         tangentMode: 103
@@ -1433,7 +1460,16 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: -1
+        value: 50
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 103
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 0.033333335
+        value: 53
         inSlope: Infinity
         outSlope: Infinity
         tangentMode: 103
@@ -1442,7 +1478,16 @@ AnimationClip:
         outWeight: 0
       - serializedVersion: 3
         time: 0.083333336
-        value: 1
+        value: 53
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 103
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 0.25
+        value: 53
         inSlope: Infinity
         outSlope: Infinity
         tangentMode: 103
@@ -1451,7 +1496,7 @@ AnimationClip:
         outWeight: 0
       - serializedVersion: 3
         time: 0.5
-        value: -1
+        value: 53
         inSlope: Infinity
         outSlope: Infinity
         tangentMode: 103
@@ -4245,7 +4290,16 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 1
+        value: 53
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 103
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 0.033333335
+        value: 50
         inSlope: Infinity
         outSlope: Infinity
         tangentMode: 103
@@ -4263,7 +4317,7 @@ AnimationClip:
         outWeight: 0
       - serializedVersion: 3
         time: 0.5
-        value: 1
+        value: 51
         inSlope: Infinity
         outSlope: Infinity
         tangentMode: 103
