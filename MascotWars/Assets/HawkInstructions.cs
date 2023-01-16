@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class GrizzlyStuff : MonoBehaviour
+public class HawkInstructions : MonoBehaviour
 {
     public void Select()
     {

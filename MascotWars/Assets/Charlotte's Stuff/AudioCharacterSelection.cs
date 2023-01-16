@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class AudioCharacterSelection : MonoBehaviour
 {
-    [SerializedField]
+   
     // Start is called before the first frame update
     void Start()
     {

@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class GrizzlyStuff : MonoBehaviour
+public class InstructionsG : MonoBehaviour
 {
-    public void Select()
+    public void PlayGameOne()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
