@@ -12,9 +12,9 @@ EditorBuildSettings:
     path: Assets/1 Scenes/2.1 Character Selection.unity
     guid: fb05b198ca701754eb099216bd1871ee
   - enabled: 1
-    path: Assets/1 Scenes/2.2 Character Selection.unity
-    guid: 90f0dd280a8e31a4f80ce5b17dcbf111
+    path: Assets/1 Scenes/4 Background 1.unity
+    guid: e4cf2dcf329537049a082c8ccfba40ae
   - enabled: 1
-    path: Assets/1 Scenes/3 Stage Selection.unity
-    guid: 4e80d7f4b273e70449ec811777349607
+    path: Assets/1 Scenes/5 Background 2.unity
+    guid: 1ecaa2babbea9f04e9c7504d793e1219
   m_configObjects: {}
